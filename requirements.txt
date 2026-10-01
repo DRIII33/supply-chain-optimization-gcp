@@ -1,0 +1,9 @@
+google-cloud-bigquery
+google-cloud-storage
+google-cloud-pubsub
+db-dtypes
+pyarrow
+pandas
+numpy
+scipy
+statsmodels
