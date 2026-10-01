@@ -38,6 +38,19 @@ DATE(l.dispatch_timestamp) dispatch_date,l.dispatch_timestamp,l.delivery_timesta
 IF(l.stock_status='STOCKOUT',1,0) is_stockout,IF(l.stock_status='LOW_STOCK',1,0) is_low_stock
 FROM `driiiportfolio.supply_chain_optimization.stg_warehouse_logs` l LEFT JOIN `driiiportfolio.supply_chain_optimization.dim_warehouses` w USING(warehouse_id);
 
+CREATE OR REPLACE VIEW `driiiportfolio.supply_chain_optimization.vw_sku_stockout_risk` AS
+SELECT
+  sku,
+  COUNT(log_id) AS shipment_count,
+  SUM(is_stockout) AS stockout_incidents,
+  SAFE_DIVIDE(
+    SUM(is_stockout),
+    COUNT(log_id)
+  ) AS stockout_rate,
+  AVG(lead_time_variance_days) AS avg_lead_time_variance_days
+FROM `driiiportfolio.supply_chain_optimization.vw_shipment_detail`
+GROUP BY sku;
+
 CREATE OR REPLACE VIEW `driiiportfolio.supply_chain_optimization.vw_inventory_daily` AS
 SELECT DATE(t.transaction_timestamp) transaction_date,t.warehouse_id,w.warehouse_name,w.city,w.state,t.category,t.transaction_type,COUNT(*) transactions,ROUND(SUM(t.total_transaction_value),2) gross_value
 FROM `driiiportfolio.supply_chain_optimization.stg_inventory_transactions` t LEFT JOIN `driiiportfolio.supply_chain_optimization.dim_warehouses` w USING(warehouse_id) GROUP BY 1,2,3,4,5,6,7;
