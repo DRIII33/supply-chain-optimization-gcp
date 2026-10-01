@@ -5,9 +5,13 @@
 
 **Date:** September 30, 2026
 
----
+**Project:** self-directed portfolio project ·
 
-**Project:** self-directed portfolio project · **Dataset:** `driiiportfolio.supply_chain_optimization` · **Validation:** 2026-09-30
+**Dataset:** `driiiportfolio.supply_chain_optimization` ·
+
+**Validation:** 2026-09-30
+
+---
 
 ## Scenario
 A fictional multi-region retailer is modernizing fragmented ERP/SCM telemetry. Scenario assumptions about stale visibility, safety stock and stockouts are not measurements of the synthetic data.
