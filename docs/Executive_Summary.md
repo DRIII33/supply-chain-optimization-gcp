@@ -5,9 +5,9 @@
 
 **Date:** September 30, 2026
 
-**Project:** self-directed portfolio project ·
+**Project:** self-directed portfolio project 
 
-**Dataset:** `driiiportfolio.supply_chain_optimization` ·
+**Dataset:** `driiiportfolio.supply_chain_optimization` 
 
 **Validation:** 2026-09-30
 
