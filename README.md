@@ -82,6 +82,13 @@ The repository reflects the completed five dashboard corrections:
 4. Technical field names replaced with executive-facing labels in the presentation layer.
 5. Inventory trend Y-axis minimum set to **0**.
 
+## Dashboard Snapshots
+
+**Page 1.** <img src="dashboard_images/Executive_Control_Tower.png" alt="Project Dashboard" width="500">
+
+**Page 2.** <img src="dashboard_images/Shipment_Performance_and_Risk.png" alt="Project Dashboard" width="500">
+
+
 ## Free-tier boundary
 
 BigQuery Sandbox supports no-billing experimentation but has 60-day expiration for tables/views/partitions and does not support streaming or DML. The project therefore uses batch load jobs and `CREATE OR REPLACE`/CTAS patterns. Cloud Storage, Pub/Sub, Dataflow, Dataproc, Dataplex and Vertex AI are documented production paths but are not claimed as executed in the no-billing environment.
