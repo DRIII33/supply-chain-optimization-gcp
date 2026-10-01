@@ -1,6 +1,19 @@
 # Enterprise Supply Chain Optimization on Google Cloud
+---
 
-Self-directed portfolio project: BigQuery warehouse, data quality/governance, statistical diagnostics, BigQuery ML, performance testing and a Looker Studio Control Tower using synthetic supply-chain data.
+**Google Cloud Specialiast:** Daniel Rodriguez III
+
+**Date:** September 30, 2026
+
+**Project:** self-directed portfolio project 
+
+**Dataset:** `driiiportfolio.supply_chain_optimization` 
+
+**Validation:** 2026-09-30
+
+---
+
+**Self-directed portfolio project:** BigQuery warehouse, data quality/governance, statistical diagnostics, BigQuery ML, performance testing and a Looker Studio Control Tower using synthetic supply-chain data.
 
 > **Synthetic / independent project. No real client or employer data.**
 
