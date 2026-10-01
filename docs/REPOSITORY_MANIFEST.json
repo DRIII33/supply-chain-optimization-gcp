@@ -1,0 +1,40 @@
+{
+  "generated": "2026-09-30",
+  "package_state": "FINAL_GITHUB_HANDOFF",
+  "source_notebook": "Engineered_Prompt_End_to_End_Portfolio_Project_B_UPDATED_v2 (1).ipynb",
+  "notebook_code_syntax_errors": 0,
+  "final_dashboard_corrections_applied": 5,
+  "headline_validation_values": {
+    "shipments": 2500,
+    "inventory_transactions": 1500,
+    "on_time_or_early": 1303,
+    "delayed": 1197,
+    "stockouts": 247,
+    "low_stock": 444,
+    "fulfillment_rate": "52.1%",
+    "avg_lead_variance_days": 0.87,
+    "gross_transaction_value_usd": 44350562.38,
+    "dq_checks": "15/15 PASS"
+  },
+  "evidence_boundary": "BigQuery execution results are represented from the supplied 2026-09-30 validation record; live Looker Studio is external to this repository.",
+  "files": [
+    ".gitignore",
+    "README.md",
+    "docs/Dashboard_Executive_Summary.md",
+    "docs/Executive_Summary.md",
+    "docs/JD_Mapping.md",
+    "docs/Looker_Studio_Build_Guide.md",
+    "docs/Project_Disclaimer.md",
+    "docs/REPOSITORY_MANIFEST.json",
+    "docs/Repository_QA.md",
+    "docs/Validation_Log.md",
+    "docs/reference_dashboard/control_tower_reference.html",
+    "notebooks/supply_chain_optimization_pipeline.ipynb",
+    "requirements.txt",
+    "scripts/bigquery_transformations.sql",
+    "scripts/data_quality_checks.sql",
+    "scripts/ml_delay_classifier.sql",
+    "scripts/statistical_analysis.py",
+    "scripts/synthetic_data_pipeline.py"
+  ]
+}
